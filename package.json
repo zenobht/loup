@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "loup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,18 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbharat/react-starter.git"
+    "url": "git+https://github.com/jbharat/loup.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jbharat/react-starter/issues"
+    "url": "https://github.com/jbharat/loup/issues"
   },
-  "homepage": "https://github.com/jbharat/react-starter#readme",
+  "homepage": "https://github.com/jbharat/loup#readme",
   "dependencies": {
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
