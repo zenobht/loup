@@ -2,11 +2,8 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import { Provider } from 'react-redux'
 import store from './store/configureStore'
+import App from './components/App'
 import './index.css'
-
-const App = () => {
-  return <div className="root">Hello World</div>
-}
 
 ReactDom.render(
   <Provider store={store}>

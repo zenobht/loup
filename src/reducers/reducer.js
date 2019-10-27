@@ -1,7 +1,15 @@
+import { FETCH_RECIPIES } from '../constants/contants'
+
 const initailState = {
-  items: [],
+  recipes: [],
 }
 
 export default function(state = initailState, action) {
-  return state
+  switch (action.type) {
+    case FETCH_RECIPIES: {
+      return { ...state, recipes: action.payload.data }
+    }
+    default:
+      return state
+  }
 }
