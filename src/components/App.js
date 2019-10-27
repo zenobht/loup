@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Gallery from '../containers/Gallery'
+import './App.css'
 
 const App = () => {
   return (
-    <section>
-      <div>Gallery</div>
+    <Fragment>
+      <span className="title">Gallery</span>
       <Gallery />
-    </section>
+    </Fragment>
   )
 }
 

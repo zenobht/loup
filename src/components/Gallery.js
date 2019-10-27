@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { func, array } from 'prop-types'
+import Image from './Image'
+import './Gallery.css'
 
 const Gallery = props => {
   const { getRecipes, recipes } = props
@@ -11,9 +13,12 @@ const Gallery = props => {
   }, [])
 
   return (
-    <section>
+    <section className="container columns">
       {recipes.map(recipe => (
-        <div key={recipe.contentId}>{recipe.title}</div>
+        <div className="card" key={recipe.contentId}>
+          <Image imageList={recipe.imageList} />
+          <div className="card-title">{recipe.title}</div>
+        </div>
       ))}
     </section>
   )
